@@ -17,7 +17,7 @@ section{
 }
 .container{
     position: relative;
-    height: 550px;
+    height: 450px;
     width: 800px;
     background-color: #222;
     
@@ -28,33 +28,34 @@ section{
     height: 100%;
     top:0;
     right: 0;
+    transition: all 0.5s;
 }
 
 .clip1{
     background-image: url(https://images.unsplash.com/photo-1546518086-03ef264c9885?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
     background-size: cover;
-    clip-path: polygon(0 100%, 0 0, 43% 0, 24% 100%);
+    clip-path: polygon(0 0, 35% 0, 15% 100%, 0 100%);
 
 }
 .clip2{
     background-image: url(https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1937&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-position: center;
     background-size: cover;
-    clip-path: polygon(71% 100%, 89% 0, 40% 0, 18% 100%);
+    clip-path: polygon(35% 0, 65% 0, 85% 100%, 15% 100%);
 }
 
 .clip3{
-    background-image: url(jywztp2h.png);
+    background-image: url(c3.png);
     background-position:center;
     background-size: cover;
-    clip-path: polygon(71% 100%, 89% 0, 100% 0, 100% 100%);
+    clip-path: polygon(65% 0, 100% 0, 100% 100%, 85% 100%);
 }
 .container:hover .clip{
     clip-path: polygon(100% 0, 100% 0,100% 100%,100% 100%);
 }
 .container .clip:hover{
-    clip-path: polygon(100% 0, 100% 0,100% 100%,100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 
